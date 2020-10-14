@@ -1,0 +1,126 @@
+@import "../../app.component.scss";
+.pricing-card {
+  @include xs {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include sm {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include md {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+  @include lg {
+    width: 270px;
+    margin-bottom: 20px;
+  }
+  @include xl {
+    width: 270px;
+    margin-bottom: 0;
+  }
+
+  border: solid 1px #e0e0e0;
+  background-color: #ffffff;
+  .prvision {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: SourceSansPro;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1a1a1a;
+    text-transform: uppercase;
+  }
+  .price {
+    height: 150px;
+    border: solid 1px #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #999999;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    h3 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 0.42;
+      color: #1a1a1a;
+      padding: 0;
+      margin: 0;
+      line-height: 1.56;
+    }
+  }
+  .info-card {
+    padding: 52px 36px 29px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .info {
+      font-family: SourceSansPro;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.44;
+      letter-spacing: normal;
+      text-align: center;
+      color: #999999;
+      padding-bottom: 44px;
+    }
+    .order-now {
+      width: 160px;
+      height: 50px;
+      border-radius: 3.8px;
+      border: solid 1px #e0e0e0;
+      background-color: #ffffff;
+      font-family: SourceSansPro;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 3.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #008ed6;
+    }
+  }
+  &:hover {
+    .prvision {
+      color: #008ed6;
+    }
+    .price {
+      background-color: #008ed6;
+      color: white;
+      h3 {
+        color: white;
+      }
+    }
+    .info-card {
+      .order-now {
+        background-color: #008ed6;
+        color: white;
+      }
+    }
+  }
+}

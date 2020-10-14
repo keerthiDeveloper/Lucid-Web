@@ -1,0 +1,48 @@
+<div class="pricing-plan-container">
+    <div class="pricing-container-1">
+        <div class="container-header">
+            <div class="sub-heading">
+                dip into the details
+            </div>
+            <div class="heading">
+                Beautiful on every device
+            </div>
+            <img src="./assets/images/feature/prostok-t-2-kopia.png" class="Prostokt-2-kopia">
+        </div>
+        <div class="container-content">
+            <ng-container *ngFor="let item of planCard">
+                <app-plan-card [userInfo]="item.userInfo" [content]="item.content"></app-plan-card>
+            </ng-container>
+        </div>
+    </div>
+    <div class="pricing-container-2">
+        <h3>
+            Like what you see? Get this great theme now!
+        </h3>
+        <div class="button-group">
+            <button class="custom-button  black">
+                view features
+            </button>
+            <button class="custom-button blue">
+                download now
+            </button>
+        </div>
+    </div>
+    <div class="pricing-container-3">
+        <div class="container-header">
+            <div class="sub-heading">
+                quality has its price
+            </div>
+            <div class="heading black">
+                Pricings & Plans
+            </div>
+            <img src="./assets/images/feature/prostok-t-2-kopia.png" class="Prostokt-2-kopia">
+        </div>
+        <div class="pricing-card-list">
+            <ng-container *ngFor="let item of pricingList">
+                <app-pricing-card [priceInfo]="item"></app-pricing-card>
+            </ng-container>
+
+        </div>
+    </div>
+</div>

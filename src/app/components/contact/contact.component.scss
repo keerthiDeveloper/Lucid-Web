@@ -1,0 +1,318 @@
+@import "../../app.component.scss";
+.contact-container {
+  @include xs {
+    position: static;
+  }
+  @include sm {
+    position: static;
+  }
+  @include md {
+    position: relative;
+  }
+  @include lg {
+    position: relative;
+  }
+  @include xl {
+    position: relative;
+  }
+
+  .heading {
+    font-family: SourceSansPro;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #1a1a1a;
+  }
+  .sub-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #008ed6;
+  }
+  .content {
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    padding-top: 25px;
+  }
+
+  .contact-container-1 {
+    background-color: #ededed;
+    height: 722px;
+    @include xs {
+      padding: 0 20px;
+    }
+    @include sm {
+      padding: 0 20px;
+    }
+    @include md {
+      padding: 0 220px;
+    }
+    @include lg {
+      padding: 0 220px;
+    }
+    @include xl {
+      padding: 0 220px;
+    }
+    .container-header {
+      padding-top: 60px;
+      text-align: center;
+    }
+    .contact-card-list {
+      padding-top: 31px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .contact-icon-card {
+        @include xs {
+          padding-bottom: 20px;
+          width: 100%;
+        }
+        @include sm {
+          padding-bottom: 20px;
+          width: 100%;
+        }
+        @include md {
+          padding-bottom: 20px;
+          width: 165px;
+        }
+        @include lg {
+          padding-bottom: 0;
+          width: 165px;
+        }
+        @include xl {
+          padding-bottom: 0;
+          width: 165px;
+        }
+        text-align: center;
+        .info-list {
+          padding-top: 31px;
+          font-family: SourceSansPro;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.44;
+          letter-spacing: normal;
+          text-align: center;
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .contact-container-2 {
+    height: 460px;
+    img {
+      width: 100%;
+      height: 460px;
+    }
+  }
+  .contact-container-3 {
+    height: 160px;
+    background-color: #15141a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .icon-bar {
+      padding-top: 25px;
+      width: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .copy-right {
+      padding-top: 20px;
+      font-family: SourceSansPro;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 3.43;
+      letter-spacing: normal;
+      text-align: center;
+      color: #444348;
+    }
+  }
+  .contact-container-4 {
+    display: flex;
+    justify-content: center;
+    .contact-form-container {
+      @include xs {
+        position: static;
+        width: 100%;
+        height: 100%;
+      }
+      @include sm {
+        position: static;
+        width: 100%;
+        height: 100%;
+      }
+      @include md {
+        top: 403px;
+        position: absolute;
+        width: 770px;
+        height: 360px;
+      }
+      @include lg {
+        top: 403px;
+        position: absolute;
+        width: 770px;
+        height: 360px;
+      }
+      @include xl {
+        top: 403px;
+        position: absolute;
+        width: 770px;
+        height: 360px;
+      }
+      background-color: #15141a;
+      .contact-form {
+        margin: 59px 0;
+        @include xs {
+          width: 100%;
+        }
+        @include sm {
+          width: 100%;
+        }
+        @include md {
+          width: 770px;
+        }
+        @include lg {
+          width: 770px;
+        }
+        @include xl {
+          width: 770px;
+        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        input,
+        textarea {
+          @include xs {
+            width: 80%;
+          }
+          @include sm {
+            width: 80%;
+          }
+          @include md {
+            width: 100%;
+          }
+          @include lg {
+            width: 100%;
+          }
+          @include xl {
+            width: 100%;
+          }
+
+          border-radius: 3.8px;
+          border: 2px solid rgba(255, 255, 255, 0.2);
+          font-family: SourceSansPro;
+          font-size: 14px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 3.43;
+          letter-spacing: normal;
+          text-align: left;
+          color: rgba(255, 255, 255, 0.2);
+          background-color: #15141a;
+          padding: 0 0 0 5px;
+        }
+        .left-container {
+          @include xs {
+            width: 100%;
+            padding-left: 40px;
+          }
+          @include sm {
+            width: 100%;
+            padding-left: 40px;
+          }
+          @include md {
+            width: 300px;
+            padding-left: 0;
+          }
+          @include lg {
+            width: 300px;
+            padding-left: 0;
+          }
+          @include xl {
+            width: 300px;
+            padding-left: 0;
+          }
+          input {
+            height: 50px;
+            margin-bottom: 20px;
+          }
+        }
+        .right-container {
+          .custom-button {
+            @include xs {
+              float: left;
+            }
+            @include sm {
+              float: left;
+            }
+            @include md {
+              float: right;
+            }
+            @include lg {
+              float: right;
+            }
+            @include xl {
+              float: right;
+            }
+
+            margin-top: 25px;
+            width: 160px;
+            height: 50px;
+            border-radius: 3.8px;
+            box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+            background-color: #008ed6;
+            border: none;
+            font-family: SourceSansPro;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+          }
+          @include xs {
+            width: 100%;
+            padding-left: 40px;
+          }
+          @include sm {
+            width: 100%;
+            padding-left: 40px;
+          }
+          @include md {
+            width: 300px;
+          }
+          @include lg {
+            width: 300px;
+          }
+          @include xl {
+            width: 300px;
+          }
+          textarea {
+            height: 190px;
+          }
+        }
+      }
+    }
+  }
+}

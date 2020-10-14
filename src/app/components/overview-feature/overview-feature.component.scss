@@ -1,0 +1,251 @@
+@import "../../app.component.scss";
+.feature-overview {
+  .heading {
+    font-family: SourceSansPro;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #1a1a1a;
+  }
+  .sub-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #008ed6;
+  }
+  img {
+    padding-top: 35px;
+  }
+  .content {
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    padding-top: 25px;
+  }
+
+  .feature-container-1 {
+    margin-bottom: 73px;
+    @include xs {
+      padding: 0 60x;
+    }
+    @include sm {
+      padding: 0 30x;
+    }
+    @include md {
+      padding: 0 60px;
+    }
+    @include lg {
+      padding: 0 155px;
+    }
+    @include xl {
+      padding: 0 155px;
+    }
+    .feature-container-1-heading {
+      padding-top: 65px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature-container-1-card {
+      padding: 75px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      @include xs {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+      @include sm {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+      @include md {
+        flex-direction: column;
+        padding: 0 20px;
+      }
+      @include lg {
+        flex-direction: row;
+      }
+      @include xl {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .feature-container-2 {
+    border-top: 1px solid #ededed;
+    display: flex;
+    padding-top: 66px;
+    padding-bottom: 16px;
+    @include xs {
+      flex-direction: column;
+      padding: 0;
+      .container-2-device {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @include sm {
+      flex-direction: column;
+      .container-2-device {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @include md {
+      flex-direction: row;
+      padding: 0 50px;
+      .container-2-device {
+        width: 510px;
+        img {
+          width: 510px;
+        }
+      }
+    }
+    @include lg {
+      flex-direction: row;
+      padding: 66px 196px 0;
+      .container-2-device {
+        width: 510px;
+        img {
+          width: 510px;
+        }
+      }
+    }
+    @include xl {
+      flex-direction: row;
+      padding: 66px 196px 0;
+      .container-2-device {
+        width: 510px;
+        img {
+          width: 510px;
+        }
+      }
+    }
+
+    .container-2-info {
+      @include xs {
+        padding: 10px;
+        width: 100%;
+      }
+      @include sm {
+        padding: 10px;
+        width: 100%;
+      }
+      @include md {
+        width: calc(100% - 510px);
+      }
+      @include lg {
+        width: calc(100% - 510px);
+      }
+      @include xl {
+        width: calc(100% - 510px);
+      }
+      .content-list {
+        padding-top: 36px;
+        ul {
+          padding: 0 0 0 16px;
+          margin: 0;
+          li {
+            color: #1a1a1a;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.44;
+          }
+        }
+      }
+    }
+  }
+  .feature-container-3 {
+    display: flex;
+    background-color: #f2f2f2;
+    @include xs {
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+      padding: 10px;
+      .container-3-info {
+        padding-top: 132px;
+        width: 100%;
+      }
+      .container-3-images {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @include sm {
+      width: 100%;
+      flex-direction: column;
+      height: 100%;
+      padding: 10px;
+      .container-3-info {
+        padding-top: 132px;
+        width: 100%;
+      }
+      .container-3-images {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    @include md {
+      width: auto;
+      flex-direction: row;
+      height: 543px;
+      padding: 0 115px 0 137px;
+      .container-3-info {
+        padding-top: 132px;
+        width: 466px;
+      }
+      .container-3-images {
+        width: 718px;
+      }
+    }
+    @include lg {
+      width: auto;
+      flex-direction: row;
+      height: 543px;
+      padding: 0 115px 0 137px;
+      .container-3-info {
+        padding-top: 132px;
+        width: 466px;
+      }
+      .container-3-images {
+        width: 718px;
+      }
+    }
+    @include xl {
+      width: auto;
+      flex-direction: row;
+      height: 543px;
+      padding: 0 115px 0 137px;
+      .container-3-info {
+        padding-top: 132px;
+        width: 466px;
+      }
+      .container-3-images {
+        width: 718px;
+      }
+    }
+  }
+}

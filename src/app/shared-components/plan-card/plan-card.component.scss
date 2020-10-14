@@ -1,0 +1,71 @@
+@import "../../app.component.scss";
+
+.plan-card {
+  @include xs {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  @include sm {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  @include md {
+    padding-bottom: 0;
+    width: 546px;
+  }
+  @include lg {
+    padding-bottom: 0;
+    width: 546px;
+  }
+  @include xl {
+    padding-bottom: 0;
+    width: 546px;
+  }
+  .plan-info {
+    font-family: SourceSansPro-It;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 35px;
+  }
+  .plan-user-item {
+    display: flex;
+    align-items: center;
+    .user-avatar {
+      width: 59px;
+      height: 59px;
+      img {
+        border-radius: 50px;
+      }
+      margin-right: 24px;
+    }
+
+    .user-info {
+      font-family: SourceSansPro;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      h5 {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 2.63;
+      }
+    }
+  }
+}

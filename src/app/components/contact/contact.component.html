@@ -1,0 +1,54 @@
+<div class="contact-container">
+    <div class="contact-container-1">
+        <div class="container-header">
+            <div class="sub-heading">
+                quality has its price
+            </div>
+            <div class="heading black">
+                Pricings & Plans
+            </div>
+            <img src="./assets/images/feature/prostok-t-2-kopia.png" class="Prostokt-2-kopia">
+        </div>
+        <div class="contact-card-list">
+            <ng-container *ngFor="let item of contactList">
+                <div class="contact-icon-card">
+                    <img src="{{item.icon}}" alt="" srcset="">
+                    <div class="info-list">
+                        <div class="info-item" *ngFor="let row of item.list"> {{row}}</div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <div class="contact-container-2">
+        <img src="./assets/images/contact/warstwa-15.png" alt="" srcset="">
+    </div>
+    <div class="contact-container-4">
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <div class="left-container">
+                    <input type="text" placeholder="NAME *">
+                    <input type="text" placeholder="MAIL *">
+                    <input type="text" placeholder="SUBJECT *">
+                </div>
+                <div class="right-container">
+                    <textarea placeholder="MESSAGE *"></textarea>
+                    <button class="custom-button">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-container-3">
+        <div>
+            <div class="icon-bar">
+                <span class="icon-item" *ngFor="let icon of footerIcon">
+                    <img src="./assets/images/contact/{{icon}}.png" alt="" srcset="">
+                </span>
+            </div>
+            <div class="copy-right">
+                copyright © 2014 lucid onepage theme
+            </div>
+        </div>
+    </div>
+
+</div>

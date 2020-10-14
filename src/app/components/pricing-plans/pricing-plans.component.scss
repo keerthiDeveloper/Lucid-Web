@@ -1,0 +1,194 @@
+@import "../../app.component.scss";
+.pricing-plan-container {
+  .heading {
+    font-family: SourceSansPro;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .sub-heading {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    color: #008ed6;
+  }
+  img {
+    padding-top: 35px;
+  }
+  .content {
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999;
+    padding-top: 25px;
+  }
+  .pricing-container-1 {
+    @include xs {
+      padding: 0 15px;
+      height: 100%;
+    }
+    @include sm {
+      padding: 0 30px;
+      height: 100%;
+    }
+    @include md {
+      padding: 0 135px;
+      height: 640px;
+    }
+    @include lg {
+      padding: 0 135px;
+      height: 640px;
+    }
+    @include xl {
+      padding: 0 135px;
+      height: 640px;
+    }
+    padding-top: 64px;
+
+    background-image: url("../../../assets/images/pricing/warstwa-8.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container-header {
+      text-align: center;
+    }
+    .container-content {
+      padding-top: 94px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  .black {
+    color: #1a1a1a;
+  }
+  .pricing-container-2 {
+    background-color: #15141a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include xs {
+      height: 100%;
+      padding: 0 25px;
+      .button-group {
+        padding-top: 10px;
+      }
+    }
+    @include sm {
+      height: 100%;
+      padding: 0 25px;
+      .button-group {
+        padding-top: 10px;
+      }
+    }
+    @include md {
+      height: 170px;
+      padding: 0 125px;
+      .button-group {
+        padding-top: 0;
+      }
+    }
+    @include lg {
+      height: 170px;
+      padding: 0 125px;
+      .button-group {
+        padding-top: 0;
+      }
+    }
+    @include xl {
+      height: 170px;
+      padding: 0 125px;
+      .button-group {
+        padding-top: 0;
+      }
+    }
+
+    h3 {
+      font-family: SourceSansPro;
+      font-size: 36px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+      padding: 0;
+      margin: 0;
+    }
+    .button-group {
+      .custom-button {
+        width: 160px;
+        height: 50px;
+        border-radius: 3.8px;
+        font-family: SourceSansPro;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 3.43;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .blue {
+        box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+        background-color: #008ed6;
+        border: none;
+      }
+      .black {
+        border: solid 1px rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        margin-right: 20px;
+      }
+    }
+  }
+  .pricing-container-3 {
+    @include xs {
+      padding: 0 15px;
+      padding-top: 60px;
+    }
+    @include sm {
+      padding: 0 15px;
+      padding-top: 60px;
+    }
+    @include md {
+      padding: 0 135px;
+      padding-top: 60px;
+    }
+    @include lg {
+      padding: 0 135px;
+      padding-top: 60px;
+    }
+    @include xl {
+      padding: 0 135px;
+      padding-top: 60px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container-header {
+      text-align: center;
+    }
+    .pricing-card-list {
+      padding-top: 71px;
+      padding-bottom: 41px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+}

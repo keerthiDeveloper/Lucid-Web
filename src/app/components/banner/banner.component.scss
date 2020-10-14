@@ -1,0 +1,367 @@
+@import "../../app.component.scss";
+
+.banner {
+  width: 100%;
+  @include xs {
+    height: 100%;
+  }
+  @include sm {
+    height: 100%;
+  }
+  @include md {
+    height: 640px;
+  }
+  @include lg {
+    height: 640px;
+  }
+  @include xl {
+    height: 640px;
+  }
+  background-image: linear-gradient(
+      to top,
+      rgba(21, 20, 26, 0.6),
+      rgba(21, 20, 26, 0.7)
+    ),
+    linear-gradient(to bottom, rgba(21, 20, 26, 0.6), rgba(21, 20, 26, 0.7)),
+    url("../../../assets/images/banner/photo.png");
+  .banner-wrapper {
+    @include xs {
+      padding: 0 30px;
+    }
+    @include sm {
+      padding: 0 30px;
+    }
+    @include md {
+      padding: 0 60px;
+    }
+    @include lg {
+      padding: 0 30px;
+    }
+    @include xl {
+      padding: 0 135px;
+    }
+    .header {
+      padding: 35px 0 0 0;
+      display: flex;
+      @include xs {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      @include sm {
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      @include md {
+        height: 67px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @include lg {
+        height: 67px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @include xl {
+        height: 67px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        height: 21px;
+        padding-bottom: 9px;
+        .menu-button {
+          height: 30px;
+          width: 25px;
+          div {
+            width: 25px;
+            height: 3px;
+            margin-bottom: 3px;
+            background-color: white;
+          }
+        }
+        @include xs {
+          display: flex;
+          justify-content: space-between;
+          .menu-button {
+            display: block;
+          }
+        }
+        @include sm {
+          display: flex;
+          justify-content: space-between;
+          .menu-button {
+            display: block;
+          }
+        }
+        @include md {
+          width: 75px;
+          display: block;
+          .menu-button {
+            display: none;
+          }
+        }
+        @include lg {
+          width: 75px;
+          display: block;
+          .menu-button {
+            display: none;
+          }
+        }
+        @include xl {
+          width: 75px;
+          display: block;
+          .menu-button {
+            display: none;
+          }
+        }
+      }
+      .hideMenu {
+        @include xs {
+          display: none;
+        }
+        @include sm {
+          display: none;
+        }
+        @include md {
+          display: block;
+        }
+        @include lg {
+          display: block;
+        }
+        @include xl {
+          display: block;
+        }
+      }
+      .header-menus {
+        @include md {
+          display: inline;
+        }
+        @include lg {
+          display: inline;
+        }
+        @include xl {
+          display: inline;
+        }
+        ul {
+          padding: 0;
+          margin: 0;
+          @include xs {
+            display: block;
+            text-align: left;
+          }
+          @include sm {
+            display: block;
+            text-align: left;
+          }
+          @include md {
+            display: inline;
+            text-align: right;
+          }
+          @include lg {
+            display: inline;
+            text-align: right;
+          }
+          @include xl {
+            display: inline;
+            text-align: right;
+          }
+          li {
+            list-style-type: none;
+            @include xs {
+              display: block;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+            }
+            @include sm {
+              display: block;
+              width: 100%;
+              height: 100%;
+              margin: 0;
+            }
+            @include md {
+              display: inline;
+              width: 446px;
+              height: 16px;
+              margin: 0 15px;
+            }
+            @include lg {
+              display: inline;
+              width: 446px;
+              height: 16px;
+              margin: 0 15px;
+            }
+            @include xl {
+              display: inline;
+              width: 446px;
+              height: 16px;
+              margin: 0 15px;
+            }
+            font-family: SourceSansPro;
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.63;
+            letter-spacing: normal;
+            color: #fffefe;
+            padding-bottom: 6px;
+          }
+          .active {
+            border-bottom: 3px solid #008ed6;
+          }
+        }
+      }
+    }
+    .home-container {
+      padding-top: 15px;
+      display: flex;
+      @include xs {
+        flex-direction: column;
+      }
+      @include sm {
+        flex-direction: column;
+      }
+      @include md {
+        flex-direction: row;
+      }
+      @include lg {
+        flex-direction: row;
+      }
+      @include xl {
+        flex-direction: row;
+      }
+      .content {
+        @include xs {
+          width: 100%;
+        }
+        @include sm {
+          width: 100%;
+        }
+        @include lg {
+          width: calc(100% - 505px);
+        }
+
+        padding-top: 41px;
+        .box-content {
+          @include xs {
+            width: 100%;
+          }
+          @include sm {
+            width: 100%;
+          }
+          @include md {
+            width: 478px;
+          }
+          @include lg {
+            width: 478px;
+          }
+          @include xl {
+            width: 478px;
+          }
+          font-family: SourceSansPro;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.44;
+          letter-spacing: normal;
+          text-align: left;
+          color: #999999;
+          .heading-1 {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 3.43;
+            letter-spacing: 1.4px;
+            color: #008ed6;
+          }
+          .heading-2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 1;
+            color: #ffffff;
+            padding-bottom: 30px;
+          }
+          .heading-3 {
+            line-height: 1.5;
+          }
+        }
+        .button-group {
+          padding-top: 63px;
+          .custom-button {
+            width: 160px;
+            height: 50px;
+            border-radius: 3.8px;
+            box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.1);
+            font-family: SourceSansPro;
+            font-size: 14px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 3.43;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            text-transform: uppercase;
+            border: none;
+            outline: 1px solid #9f9595;
+            outline-style: groove;
+          }
+          .btn-blue {
+            background-color: #008ed6;
+          }
+          .btn-grey {
+            background-color: transparent;
+          }
+          .space {
+            margin-right: 20px;
+          }
+        }
+      }
+      .image {
+        height: 519px;
+        object-fit: contain;
+        @include xs {
+          width: 100%;
+          padding-top: 55px;
+          img {
+            width: 100%;
+          }
+        }
+        @include sm {
+          padding-top: 55px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        @include md {
+          padding-top: 55px;
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        @include lg {
+          padding-top: 0;
+          width: 505px;
+          img {
+            width: 505px;
+          }
+        }
+        @include xl {
+          padding-top: 0;
+          width: 505px;
+          img {
+            width: 505px;
+          }
+        }
+      }
+    }
+  }
+}
